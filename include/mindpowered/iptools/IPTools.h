@@ -25,11 +25,12 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(subnet_mask);
+		param0->setStdString(subnet_mask);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.SubnetMaskToCIDR", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		std::map<std::string,::maglev::CppAny> retmap;
+		return retmap;
 	}
 
 	/*!
@@ -41,11 +42,12 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(ip_addr);
+		param0->setStdString(ip_addr);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.CalcCIDR", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		std::vector<::maglev::CppAny> retarr;
+		return retarr;
 	}
 
 	/*!
@@ -57,11 +59,11 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(ip_addr);
+		param0->setStdString(ip_addr);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.IPToDecimal", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		return ret.getString();
 	}
 
 	/*!
@@ -73,11 +75,11 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(ip4_number);
+		param0->setStdString(ip4_number);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.IP4FromDecimal", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		return ret.getString();
 	}
 
 	/*!
@@ -89,11 +91,11 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(ip6_number);
+		param0->setStdString(ip6_number);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.IP6FromDecimal", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		return ret.getString();
 	}
 
 	/*!
@@ -105,11 +107,12 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(ip_addr);
+		param0->setStdString(ip_addr);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.IPv4ToIPv6", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		std::map<std::string,::maglev::CppAny> retmap;
+		return retmap;
 	}
 
 	/*!
@@ -121,11 +124,12 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(ip6_addr);
+		param0->setStdString(ip6_addr);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.ExpandIPv6", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		std::map<std::string,::maglev::CppAny> retmap;
+		return retmap;
 	}
 
 	/*!
@@ -137,11 +141,12 @@ public:
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
-		param0.setStdString(ip6_addr);
+		param0->setStdString(ip6_addr);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.CompressIPv6", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret;
+		std::map<std::string,::maglev::CppAny> retmap;
+		return retmap;
 	}
 
 };
