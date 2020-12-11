@@ -10,6 +10,8 @@
 #include <maglev/CppCallbackPtr.h>
 #include <maglev/CppAny.h>
 
+#include <string>
+#include <map>
 /*!
  * IP Address Conversion and CIDR calculator
  */
@@ -22,7 +24,7 @@ public:
 	 * @return {std::map<std::string,::maglev::CppAny>} object containing information about subnet including CIDR prefix
 	*/
 	std::map<std::string,::maglev::CppAny> SubnetMaskToCIDR(std::string subnet_mask) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(subnet_mask);
@@ -39,7 +41,7 @@ public:
 	 * @return {std::vector<::maglev::CppAny>} a list of objects containing information about the IP address range
 	*/
 	std::vector<::maglev::CppAny> CalcCIDR(std::string ip_addr) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(ip_addr);
@@ -56,14 +58,14 @@ public:
 	 * @return {std::string} Decimal representation of the provided IP address
 	*/
 	std::string IPToDecimal(std::string ip_addr) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(ip_addr);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.IPToDecimal", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret.getString();
+		return ret->getStdString();
 	}
 
 	/*!
@@ -72,14 +74,14 @@ public:
 	 * @return {std::string} The IP address
 	*/
 	std::string IP4FromDecimal(std::string ip4_number) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(ip4_number);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.IP4FromDecimal", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret.getString();
+		return ret->getStdString();
 	}
 
 	/*!
@@ -88,14 +90,14 @@ public:
 	 * @return {std::string} The IP address
 	*/
 	std::string IP6FromDecimal(std::string ip6_number) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(ip6_number);
 		myargs.push_back(param0);
 		::maglev::CppAny ret;
 		bus->call("IPTools.IP6FromDecimal", myargs, [&ret] (::maglev::CppAny async_ret) { ret = async_ret; });
-		return ret.getString();
+		return ret->getStdString();
 	}
 
 	/*!
@@ -104,7 +106,7 @@ public:
 	 * @return {std::map<std::string,::maglev::CppAny>} An object containing IPv6 representations of the provided IPv4 address
 	*/
 	std::map<std::string,::maglev::CppAny> IPv4ToIPv6(std::string ip_addr) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(ip_addr);
@@ -121,7 +123,7 @@ public:
 	 * @return {std::map<std::string,::maglev::CppAny>} The same IPv6 address with zeros expanded
 	*/
 	std::map<std::string,::maglev::CppAny> ExpandIPv6(std::string ip6_addr) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(ip6_addr);
@@ -138,7 +140,7 @@ public:
 	 * @return {std::map<std::string,::maglev::CppAny>} The same IPv6 address with zeros compressed
 	*/
 	std::map<std::string,::maglev::CppAny> CompressIPv6(std::string ip6_addr) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0->setStdString(ip6_addr);
