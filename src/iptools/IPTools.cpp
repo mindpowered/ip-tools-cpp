@@ -75,7 +75,7 @@ HXLINE(  21)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  22)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.SubnetMaskToCIDR",12,db,0a,75)));
 HXLINE(  23)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE(  24)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  25)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.SubnetMaskToCIDR' has not yet been implemented. Please email support@mindpowered.dev",cc,ed,a5,b8),data);
+HXLINE(  25)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.SubnetMaskToCIDR' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",b7,78,76,7f),data);
 HXLINE(  26)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  27)			return result;
             		}
@@ -89,7 +89,7 @@ HXLINE(  32)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  33)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.CalcCIDR",e3,19,eb,b8)));
 HXLINE(  34)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE(  35)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  36)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.CalcCIDR' has not yet been implemented. Please email support@mindpowered.dev",1d,a9,37,73),data);
+HXLINE(  36)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.CalcCIDR' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",08,23,48,c3),data);
 HXLINE(  37)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  38)			return result;
             		}
@@ -103,7 +103,7 @@ HXLINE(  43)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  44)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.IPToDecimal",b5,84,dc,f4)));
 HXLINE(  45)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE(  46)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  47)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.IPToDecimal' has not yet been implemented. Please email support@mindpowered.dev",5f,37,6b,67),data);
+HXLINE(  47)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.IPToDecimal' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",0e,80,e7,0d),data);
 HXLINE(  48)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  49)			return result;
             		}
@@ -117,7 +117,7 @@ HXLINE(  54)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  55)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.IP4FromDecimal",54,55,5c,4f)));
 HXLINE(  56)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE(  57)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  58)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.IP4FromDecimal' has not yet been implemented. Please email support@mindpowered.dev",0e,df,b9,8c),data);
+HXLINE(  58)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.IP4FromDecimal' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",79,e8,26,01),data);
 HXLINE(  59)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  60)			return result;
             		}
@@ -131,7 +131,7 @@ HXLINE(  65)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  66)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.IP6FromDecimal",92,30,db,d2)));
 HXLINE(  67)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE(  68)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  69)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.IP6FromDecimal' has not yet been implemented. Please email support@mindpowered.dev",4c,a1,2d,0f),data);
+HXLINE(  69)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.IP6FromDecimal' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",b7,d0,f5,c7),data);
 HXLINE(  70)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  71)			return result;
             		}
@@ -145,7 +145,7 @@ HXLINE(  76)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  77)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.IPv4ToIPv6",a1,37,26,e7)));
 HXLINE(  78)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE(  79)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  80)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.IPv4ToIPv6' has not yet been implemented. Please email support@mindpowered.dev",db,cf,86,8a),data);
+HXLINE(  80)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.IPv4ToIPv6' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",46,2b,19,df),data);
 HXLINE(  81)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  82)			return result;
             		}
@@ -159,7 +159,7 @@ HXLINE(  87)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  88)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.ExpandIPv6",9b,f3,aa,e3)));
 HXLINE(  89)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE(  90)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE(  91)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.ExpandIPv6' has not yet been implemented. Please email support@mindpowered.dev",d5,60,8e,da),data);
+HXLINE(  91)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.ExpandIPv6' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",40,6e,37,9e),data);
 HXLINE(  92)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE(  93)			return result;
             		}
@@ -173,7 +173,7 @@ HXLINE(  98)			data->push(::maglev::MagLevString_obj::fromString(HX_("_not_imple
 HXLINE(  99)			data->push(::maglev::MagLevString_obj::fromString(HX_("IPTools.CompressIPv6",63,ab,b0,4d)));
 HXLINE( 100)			data->push(::maglev::MagLevString_obj::fromString(HX_("iptools",d4,b0,74,ea)));
 HXLINE( 101)			bus->call(HX_("MindPowered.Telemetry.Send",79,51,dc,d8),data);
-HXLINE( 102)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("Method 'IPTools.CompressIPv6' has not yet been implemented. Please email support@mindpowered.dev",9d,3e,3c,3d),data);
+HXLINE( 102)			 ::maglev::MagLevError err = ::maglev::MagLevError_obj::create(-20000,HX_("You are trying to use the 'IPTools.CompressIPv6' method but it's not quite done yet. Please email support@mindpowered.dev to find out when it will be done.",88,8f,a2,25),data);
 HXLINE( 103)			 ::maglev::MagLevResult result = ::maglev::MagLevResult_obj::fromError(err);
 HXLINE( 104)			return result;
             		}
