@@ -26,7 +26,7 @@ public:
 	std::map<std::string,::maglev::CppAny> SubnetMaskToCIDR(std::string subnet_mask)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,subnet_mask](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
@@ -46,7 +46,7 @@ public:
 	std::vector<::maglev::CppAny> CalcCIDR(std::string ip_addr)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,ip_addr](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
@@ -66,7 +66,7 @@ public:
 	std::string IPToDecimal(std::string ip_addr)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,ip_addr](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
@@ -85,7 +85,7 @@ public:
 	std::string IP4FromDecimal(std::string ip4_number)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,ip4_number](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
@@ -104,7 +104,7 @@ public:
 	std::string IP6FromDecimal(std::string ip6_number)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,ip6_number](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
@@ -123,7 +123,7 @@ public:
 	std::map<std::string,::maglev::CppAny> IPv4ToIPv6(std::string ip_addr)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,ip_addr](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
@@ -143,7 +143,7 @@ public:
 	std::map<std::string,::maglev::CppAny> ExpandIPv6(std::string ip6_addr)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,ip6_addr](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
@@ -163,7 +163,7 @@ public:
 	std::map<std::string,::maglev::CppAny> CompressIPv6(std::string ip6_addr)
 	{
 		::maglev::CppAny ret;
-		run_haxe([](){
+		run_haxe([&ret,ip6_addr](){
 			::maglev::MagLevCpp bus = ::maglev::MagLevCpp_obj::getInstance("default");
 			std::vector<::maglev::CppAny> myargs;
 			::maglev::CppAny param0 = new ::maglev::CppAny_obj();
