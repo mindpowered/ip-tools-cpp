@@ -9,9 +9,14 @@
 #include <maglev/MagLevCpp.h>
 #include <maglev/CppCallbackPtr.h>
 #include <maglev/CppAny.h>
+#include <iptools/IPTools.h>
 #include <haxecpp/haxe_thread.h>
 #include <string>
 #include <map>
+
+void __boot_maglev();
+void __boot_iptools();
+
 /*!
  * IP Address Conversion and CIDR calculator
  */
@@ -29,7 +34,7 @@ public:
 	}
 	~IPTools()
 	{
-	{
+	}
 
 	/*!
 	 * Convert a subnet mask to CIDR notation
