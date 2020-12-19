@@ -17,6 +17,19 @@
  */
 class IPTools {
 public:
+	IPTools()
+	{
+		run_haxe([](){
+			__boot_maglev();
+			__boot_iptools();
+			::maglev::MagLev m0 = ::maglev::MagLev_obj::getInstance("default");
+			auto o = new ::iptools::IPTools_obj();
+			o->__construct(m0);
+		});
+	}
+	~IPTools()
+	{
+	{
 
 	/*!
 	 * Convert a subnet mask to CIDR notation
