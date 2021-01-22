@@ -56,6 +56,11 @@
 
 void __boot_iptools()
 {
+//only boot once
+static bool already_called = false;
+if (already_called) return;
+already_called = true;
+
 ::haxe::StackItem_obj::__register();
 ::ValueType_obj::__register();
 ::iptools::IPTools_obj::__register();
