@@ -9,6 +9,7 @@ Contents
 * [Licensing](#licensing)
 * [Requirements](#requirements)
 * [Installation](#installation)
+* [Usage](#usage)
 * [Support](#support)
 
 # Source Code and Documentation
@@ -64,16 +65,28 @@ Reference dependency in BUILD file ...
 ```
 
 
+# Usage
+```cpp
+#include <mindpowered/iptools/IPTools.h>
+
+{
+    auto ipt = new IPTools();
+    auto decimal = ipt->IPToDecimal("192.168.1.1");
+    delete ipt;
+}
+
+```
+
+
 # Support
 We are here to support using this package. If it doesn't do what you're looking for, isn't working, or you just need help, please [Contact us][contact].
 
 There is also a public [Issue Tracker][bugs] available for this package.
-  
-  
-![Documentation - CPP README - ip-tools](https://www.google-analytics.com/collect?v=1&tid=UA-178768904-1&cid=555&aip=1&t=event&ec=Documentation&ea=CPP+README&el=ip-tools)
+
 
 
 [bugs]: https://github.com/mindpowered/ip-tools-cpp/issues
 [contact]: https://mindpowered.dev/support.html?ref=ip-tools-cpp/
+[docs]: https://mindpowered.github.io/ip-tools-cpp/
 [licensing]: https://mindpowered.dev/?ref=ip-tools-cpp
 [purchase]: https://mindpowered.dev/purchase/ip-tools-cpp
