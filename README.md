@@ -1,6 +1,9 @@
 
 iptools
 =======
+Tools for working with IP Addresses
+
+![Build Status](https://mindpowered.dev/assets/images/github-badges/build-passing.svg)
 
 Contents
 ========
