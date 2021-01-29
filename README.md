@@ -1,7 +1,7 @@
 
 iptools
 =======
-Tools for working with IP4/IP6 Addresses including IPv4, IPv6, CIDR, and Subnet Masks
+Tools for working with IP4/IP6 IP Addresses including IPv4, IPv6, CIDR, and Subnet Masks
 
 ![Build Status](https://mindpowered.dev/assets/images/github-badges/build-passing.svg)
 
@@ -10,6 +10,7 @@ Contents
 
 * [Source Code and Documentation](#source-code-and-documentation)
 * [Licensing](#licensing)
+* [About](#about)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -21,6 +22,13 @@ Contents
 
 # Licensing
 To obtain a version of this package under the MIT License, follow the instructions to [get a license][purchase]. The MIT License has no restrictions on commercial use and permits reuse within proprietary software.
+
+# About
+IPv4 uses a 32-bit address for its Internet addresses. All IPv4 addresses are now assigned. IPv6 utilizes 128-bit Internet addresses so there are 1028 times more addresses. Mappings exist for converting from an IPv4 address to an IPv6 addresses. This allows interoperability.
+
+An IP address consists of octets delimited by dots (".") for IPv4 or colons (":") for IPv6. We can compress IPv6 addresses by removing extra zeros to make the address shorter. Computers store IP addresses as their corresponding integer values. The number represented by this integer is its decimal representation.
+
+Subnetting is the process of dividing a network into smaller network sections. A part of the IP address is *masked* off to define a network. The remaining part of the address identifies a device on the network. CIDR is an alternative way of representing a subnet mask and IP address range.
 
 # Requirements
 - Bazel - https://www.bazel.build/
